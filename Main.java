@@ -10,129 +10,129 @@ public class Main {
 
 
 //        1.Write a Java program to test if the first and the last element of an array of integers are same. The length of the array must be greater than or equal to 2
-//
-//
-//        System.out.println("\n\n Q1 output: ");
-//
-//
-//        System.out.println("please determine the length of the array you want \n must be greater or equal to 2: ");
-//        int array_len = scanner.nextInt();
-//
-//        if (array_len < 2 ) {
-//            System.out.println("please enter a number greater than 2 ");
-//            array_len = scanner.nextInt();
-//        }
-//        int[] numbers_array = new int[array_len];
-//
-//        System.out.println("Please enter " + array_len + " numbers to the array: ");
-//
-//        for (int i = 0; i < numbers_array.length; i++) {
-//            numbers_array[i] = scanner.nextInt();
-//        }
-//
-//        if ( numbers_array[0] == numbers_array[numbers_array.length-1]) {
-//            System.out.println(true + ",  the first element = the last element.");
-//        }else System.out.println(false + ",  the first element != the last element.");
-//
-//
-//
-//
-//
-////        2.Write a Java program to find the k largest elements in a given array. Elements in the array can be in any order.
-//
-//        System.out.println("\n\n Q2 output: ");
-//
-//
-//        ArrayList<Integer> list = new ArrayList<>();
-//
-//        System.out.println("Please enter 7 numbers to the array: ");
-//
-//        for (int i = 0; i < 7; i++) {
-//            list.add(scanner.nextInt());
-//        }
-//
-//        System.out.println("the entered array is: " + list);
-//
-//        list.sort(Comparator.naturalOrder());
-//        list.sort(Comparator.reverseOrder());
-//
-//        System.out.println("the array after sorted reversely: " + list);
-//
-//        System.out.println("Now enter one number to print the largest elements of this number: ");
-//        int entered_number = scanner.nextInt();
-//
-//        System.out.print(entered_number + " largest elements of the array are : ");
-//        for (int i = 0; i < entered_number; i++) {
-//            System.out.print(list.get(i) + " ");
-//        }
-//
-//
-//
-//
-//
-////        3.Write a Java program to find the numbers greater than the average of the numbers of a given array.
-//
-//
-//        System.out.println("\n\n Q3 output: ");
-//
-//
-//        System.out.println("please enter the size of the list: ");
-//        int list_size = scanner.nextInt();
-//
-//        ArrayList<Integer> arr = new ArrayList<>();
-//
-//        System.out.println("Please enter " + list_size + " numbers to get the average: ");
-//
-//        for (int i = 0; i < list_size; i++) {
-//            arr.add(scanner.nextInt());
-//        }
-//
-//        System.out.println("the array : " + arr);
-//
-//        int sum = 0;
-//        int average = 0;
-//
-//        for ( int num : arr ) {
-//            sum += num;
-//        }
-//
-//        average = sum / arr.size();
-//        System.out.println("the average of array is: " + average);
-//
-//        System.out.print("And the numbers that greater than average: ");
-//        for ( int num : arr ) {
-//            if (num > average)
-//                System.out.print(num + " ");
-//        }
-//
-//
-//
-//
-//
-////        4.Write a Java program to get the larger value between first and last element of an array of integers.
-//
-//
-//        System.out.println("\n\n Q4 output: ");
-//
-//
-//        ArrayList<Integer> numbers_list = new ArrayList<>();
-//        System.out.println("Please enter 3 numbers to the array: ");
-//
-//        for (int i = 0; i < 3; i++) {
-//            numbers_list.add(scanner.nextInt());
-//        }
-//
-//        int largest = numbers_list.get(0);
-//        int t = 0;
-//        for (int i = 0; i < numbers_list.size(); i++) {
-//
-//            if (largest <= numbers_list.get(i)) {
-//                t = numbers_list.get(i);
-//            }
-//        }
-//        System.out.println("Larger value between first and last element: " + t);
-//
-//
+
+
+        System.out.println("\n\n Q1 output: ");
+
+
+        System.out.println("please determine the length of the array you want \n must be greater or equal to 2: ");
+        int array_len = scanner.nextInt();
+
+        if (array_len < 2 ) {
+            System.out.println("please enter a number greater than 2 ");
+            array_len = scanner.nextInt();
+        }
+        int[] numbers_array = new int[array_len];
+
+        System.out.println("Please enter " + array_len + " numbers to the array: ");
+
+        for (int i = 0; i < numbers_array.length; i++) {
+            numbers_array[i] = scanner.nextInt();
+        }
+
+        if ( numbers_array[0] == numbers_array[numbers_array.length-1]) {
+            System.out.println(true + ",  the first element = the last element.");
+        }else System.out.println(false + ",  the first element != the last element.");
+
+
+
+
+
+//        2.Write a Java program to find the k largest elements in a given array. Elements in the array can be in any order.
+
+        System.out.println("\n\n Q2 output: ");
+
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        System.out.println("Please enter 7 numbers to the array: ");
+
+        for (int i = 0; i < 7; i++) {
+            list.add(scanner.nextInt());
+        }
+
+        System.out.println("the entered array is: " + list);
+
+        list.sort(Comparator.naturalOrder());
+        list.sort(Comparator.reverseOrder());
+
+        System.out.println("the array after sorted reversely: " + list);
+
+        System.out.println("Now enter one number to print the largest elements of this number: ");
+        int entered_number = scanner.nextInt();
+
+        System.out.print(entered_number + " largest elements of the array are : ");
+        for (int i = 0; i < entered_number; i++) {
+            System.out.print(list.get(i) + " ");
+        }
+
+
+
+
+
+//        3.Write a Java program to find the numbers greater than the average of the numbers of a given array.
+
+
+        System.out.println("\n\n Q3 output: ");
+
+
+        System.out.println("please enter the size of the list: ");
+        int list_size = scanner.nextInt();
+
+        ArrayList<Integer> arr = new ArrayList<>();
+
+        System.out.println("Please enter " + list_size + " numbers to get the average: ");
+
+        for (int i = 0; i < list_size; i++) {
+            arr.add(scanner.nextInt());
+        }
+
+        System.out.println("the array : " + arr);
+
+        int sum = 0;
+        int average = 0;
+
+        for ( int num : arr ) {
+            sum += num;
+        }
+
+        average = sum / arr.size();
+        System.out.println("the average of array is: " + average);
+
+        System.out.print("And the numbers that greater than average: ");
+        for ( int num : arr ) {
+            if (num > average)
+                System.out.print(num + " ");
+        }
+
+
+
+
+
+//        4.Write a Java program to get the larger value between first and last element of an array of integers.
+
+
+        System.out.println("\n\n Q4 output: ");
+
+
+        ArrayList<Integer> numbers_list = new ArrayList<>();
+        System.out.println("Please enter 3 numbers to the array: ");
+
+        for (int i = 0; i < 3; i++) {
+            numbers_list.add(scanner.nextInt());
+        }
+
+        int largest = numbers_list.get(0);
+        int t = 0;
+        for (int i = 0; i < numbers_list.size(); i++) {
+
+            if (largest <= numbers_list.get(i)) {
+                t = numbers_list.get(i);
+            }
+        }
+        System.out.println("Larger value between first and last element: " + t);
+
+
 
 
 //        5.Write a Java program to swap the first and last elements of an array and create a new array.
