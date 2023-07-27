@@ -218,8 +218,20 @@ public class Main {
                     user_array.add(scanner.nextInt());
                 }
             } else if (option == 2) {
+                if (user_array.isEmpty()) {
+                    System.out.println("first enter 5 number of the array: ");
+                    for (int i = 0; i < 5; i++) {
+                        user_array.add(scanner.nextInt());
+                    }
+                }
                 System.out.println("elements of array are: " + user_array);
             } else if (option == 3) {
+                if (user_array.isEmpty()) {
+                    System.out.println("first enter 5 number of the array: ");
+                    for (int i = 0; i < 5; i++) {
+                        user_array.add(scanner.nextInt());
+                    }
+                }
                 System.out.println("please enter a number to search it in array: ");
                 int search_element = scanner.nextInt();
                 for ( int e : user_array ){
@@ -227,6 +239,12 @@ public class Main {
                         System.out.println("the element is in index " + user_array.indexOf(e));
                 }
             } else if (option == 4) {
+                if (user_array.isEmpty()) {
+                    System.out.println("first enter 5 number of the array: ");
+                    for (int i = 0; i < 5; i++) {
+                        user_array.add(scanner.nextInt());
+                    }
+                }
                 System.out.println("the origin array: " + user_array);
                 user_array.sort(Comparator.naturalOrder());
                 System.out.println("the sorted array: " + user_array);
