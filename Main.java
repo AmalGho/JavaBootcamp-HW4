@@ -19,7 +19,7 @@ public class Main {
         int array_len = scanner.nextInt();
 
         if (array_len < 2 ) {
-            System.out.println("please enter a number greater than 2 ");
+            System.out.println("Try again ... enter a number greater than 2 ");
             array_len = scanner.nextInt();
         }
         int[] numbers_array = new int[array_len];
@@ -90,7 +90,7 @@ public class Main {
         System.out.println("the array : " + arr);
 
         int sum = 0;
-        int average = 0;
+        double average = 0;
 
         for ( int num : arr ) {
             sum += num;
