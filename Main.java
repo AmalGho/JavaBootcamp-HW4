@@ -96,7 +96,7 @@ public class Main {
             sum += num;
         }
 
-        average = sum / arr.size();
+        average = sum / (double) arr.size();
         System.out.println("the average of array is: " + average);
 
         System.out.print("And the numbers that greater than average: ");
@@ -201,6 +201,8 @@ public class Main {
 
         ArrayList<Integer> user_array = new ArrayList<>();
 
+        System.out.println("before start the menu .. enter the size of array you want: ");
+        int arr_size = scanner.nextInt();
 
         do {
             System.out.println("\nPlease select one option: "
@@ -213,22 +215,22 @@ public class Main {
             int option = scanner.nextInt();
 
             if (option == 1) {
-                System.out.println("please enter 5 number of the array: ");
-                for (int i = 0; i < 5; i++) {
+                System.out.println("please enter " +arr_size+ " number of the array: ");
+                for (int i = 0; i < arr_size; i++) {
                     user_array.add(scanner.nextInt());
                 }
             } else if (option == 2) {
                 if (user_array.isEmpty()) {
-                    System.out.println("first enter 5 number of the array: ");
-                    for (int i = 0; i < 5; i++) {
+                    System.out.println("please enter " +arr_size+ " number of the array: ");
+                    for (int i = 0; i < arr_size; i++) {
                         user_array.add(scanner.nextInt());
                     }
                 }
                 System.out.println("elements of array are: " + user_array);
             } else if (option == 3) {
                 if (user_array.isEmpty()) {
-                    System.out.println("first enter 5 number of the array: ");
-                    for (int i = 0; i < 5; i++) {
+                    System.out.println("please enter " +arr_size+ " number of the array: ");
+                    for (int i = 0; i < arr_size; i++) {
                         user_array.add(scanner.nextInt());
                     }
                 }
@@ -240,8 +242,8 @@ public class Main {
                 }
             } else if (option == 4) {
                 if (user_array.isEmpty()) {
-                    System.out.println("first enter 5 number of the array: ");
-                    for (int i = 0; i < 5; i++) {
+                    System.out.println("please enter " +arr_size+ " number of the array: ");
+                    for (int i = 0; i < arr_size; i++) {
                         user_array.add(scanner.nextInt());
                     }
                 }
